@@ -126,6 +126,7 @@ def search():
         api_response['results'] = rendered_content
     else:
         api_response['error'] = build_no_results()
+        api_response['results'] = []
 
     return api_response
 
